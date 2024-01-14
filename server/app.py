@@ -51,7 +51,7 @@ class Login(Resource):
         return {'error': '401 Unauthorized'}, 401
 
 class Logout(Resource):
-     def delete(self):
+    def delete(self):
         session['user_id'] = None
         return {}, 204
 
